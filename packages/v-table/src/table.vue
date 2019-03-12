@@ -342,7 +342,7 @@
                                                :is="col.componentName" @on-custom-comp="customCompFunc"></component>
                                 </span>
                                     <span v-else-if="typeof col.formatter==='function'"
-                                          v-html="col.formatter(item,rowIndex,pagingIndex,col.field)">
+                                          v-html="col.formatter('test')">
                                 </span>
                                     <span v-else-if="col.type === 'selection'">
                                         <v-checkbox @change="handleCheckChange(item)" :show-slot="false"
